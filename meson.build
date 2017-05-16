@@ -1,5 +1,8 @@
 project('Corebird', ['vala', 'c'],
-        version: '1.4.2')
+        version: '1.4.2',
+        default_options: [
+          'buildtype=debugoptimized'
+        ])
 
 gnome = import('gnome')
 srcdir = include_directories('src')
